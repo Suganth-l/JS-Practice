@@ -72,3 +72,16 @@ largest3(7, 9, 12);
     console.log(`The largest number is ${c}`);
   }
 }) ();
+
+
+//spread Operator
+const sum = function (...numbers) {
+    let count = 0;
+    for (let num of numbers) {
+        count = count + num;
+    }
+    console.log(count);
+}
+
+sum(2, 7, 3);
+sum(2, 5);
