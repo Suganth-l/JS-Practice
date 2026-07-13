@@ -55,6 +55,31 @@ switch (grade) {
 }
 
 //2. print the season based on months in the year (3,4,5 - summer) (11,12,1,2 - winter) (6,7,8,9 - rainy)
+let month = 4;
+switch (month) {
+    case 3:
+    case 4:
+    case 5:
+        console.log(`Summer`);
+        break;
+    case 11:
+    case 12:
+    case 1:
+    case 2:
+        console.log(`Winter`);
+        break;
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+        console.log(`Rainy`);
+        break;
+    default:
+        console.log(`Invalid Input`);
+        return;
+}
+
 
 
 //---------- Looping constructs ---------------------
@@ -74,13 +99,24 @@ while (i <= 5) {
 //Do-While Loop: ATM machine: Keep asking PIN until the user
 let pin = 1234;
 do {
-    console.log(`Enter Correct Pin ${pin}`);
+    console.log(`Enter Correct Pin`);
 } while (pin != 1234);
 console.log("Enter pin is correct welcome!");
 
 //For…of Loop - Print all fruits in a basket.
+let basket = ["Apple", "Orange", "Banana"];
+for (let fruit of basket) {
+    console.log(fruit);
+}
 
 //For…in - Print all student details from an object.
+let student = {
+    name: "Suganth",
+    age: 21
+};
+for (let s1 in student) {
+    console.log(student[s1]);
+}
 
 //forEach Loop - Print the squares of all numbers in an array.
 let array1 = [1, 2, 4, 6, 8, 9];
