@@ -115,7 +115,7 @@ let student = {
     age: 21
 };
 for (let s1 in student) {
-    console.log(student[s1]);
+    console.log(`${s1} is ${student[s1]}`);
 }
 
 //forEach Loop - Print the squares of all numbers in an array.
