@@ -1,7 +1,9 @@
 class Mentor {
-    name = "Ayush";
-    age = 25;
-    skill = "Java";
+    constructor(name, age, tech) {
+        this.name = name;
+        this.age = age;
+        this.tech = tech;
+    }
 
     teach() {
         console.log("Mentor teaching");
@@ -11,7 +13,7 @@ class Mentor {
         console.log("Mentor Grooming");
     }
 }
-let m = new Mentor();
-console.log(`Name: ${m.name}  Age: ${m.age}  Skill: ${m.skill}`);
+let m = new Mentor("Suganth", 21, "Javascript");
+console.log(`Name: ${m.name}  Age: ${m.age}  Tech: ${m.tech}`);
 m.groom();
 m.teach();
