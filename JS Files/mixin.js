@@ -16,3 +16,5 @@ Object.assign(Duck.prototype, flyMixin, swimMixin);
 const duck = new Duck();
 duck.fly();
 duck.swim();
+
+
